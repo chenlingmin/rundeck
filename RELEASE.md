@@ -1,9 +1,9 @@
-Release 2.9.1
+Release 2.10.1
 ===========
 
-Date: 2017-08-04
+Date: 2017-11-20
 
-Name: <span style="color: ForestGreen"><span class="glyphicon glyphicon-sunglasses"></span> "caffe latte forestgreen sunglasses"</span>
+Name: <span style="color: Tomato"><span class="glyphicon glyphicon-knight"></span> "cafe mocha tomato knight"</span>
 
 ## Upgrading from Earlier versions
 
@@ -11,31 +11,56 @@ Name: <span style="color: ForestGreen"><span class="glyphicon glyphicon-sunglass
 
 ## Notes
 
-Bugfix release.
+Primarily Bug fixes.
 
-Previous changes in 2.9.0: [Relese 2.9.0](https://github.com/rundeck/rundeck/blob/v2.9.0/RELEASE.md)
+Enhancements:
 
-For more detail see [2.9.0 Changes](https://github.com/rundeck/rundeck/issues/2577)
-
-Stay tuned! We are also adding many new features to [Rundeck Pro](http://rundeck.com).
+* New: Global Variable step plugin: copy captured data values into a global context in any variable group.  E.g. data from a node step to use it in a non-node-step.
+	* Within a job, copy data to the `export.*` group, to have it available in later steps if the job is included as a Job Reference.
 
 ## Contributors
 
 * Greg Schueler (gschueler)
+* Luis Toledo (ltamaster)
+* Michihito Shigemura (shigemk2)
+* jtobard
+* morihaya
 
 ## Bug Reporters
 
+* JustRiedy
+* Morihaya
 * gschueler
+* jtobard
+* leonboot
 * ltamaster
-* qicaihuoyan
-* uprooted
+* pchevallereau
+* shigemk2
+* vinillum
 
 ## Issues
 
-[Milestone 2.9.1](https://github.com/rundeck/rundeck/milestone/59)
+[Milestone 2.10.1](https://github.com/rundeck/rundeck/milestone/64)
 
-* [Editing Project Configuration File](https://github.com/rundeck/rundeck/issues/2673)
-* [Fix: Execution Summary step start times show in wrong time zone](https://github.com/rundeck/rundeck/pull/2672)
-* [fix: edit project config file shows error after saving](https://github.com/rundeck/rundeck/pull/2671)
-* [Error on Log Output tab on rundeck 2.9.0](https://github.com/rundeck/rundeck/issues/2667)
-* [yum installation broken: "Transaction check error" for web.xml](https://github.com/rundeck/rundeck/issues/2666)
+* [Improvement on load jobs page](https://github.com/rundeck/rundeck/pull/2953)
+* [Uplift variables to global (2)](https://github.com/rundeck/rundeck/pull/2952)
+* [Update dependencies: jackson-databind, commons-beanutils](https://github.com/rundeck/rundeck/pull/2949)
+* [Change the JSCH authentication error message](https://github.com/rundeck/rundeck/pull/2934)
+* [Dependency cleanup](https://github.com/rundeck/rundeck/pull/2933)
+* [Bug: cluster mode is not enabled](https://github.com/rundeck/rundeck/issues/2932)
+* [Instance scope step plugin properties not shown in Plugin listing page](https://github.com/rundeck/rundeck/issues/2924)
+* [Key browser dialog is broken for new projects](https://github.com/rundeck/rundeck/issues/2919)
+* [java.lang.IllegalStateException: stack is empty](https://github.com/rundeck/rundeck/issues/2914)
+* [Add ui plugin support for ACL editor pages](https://github.com/rundeck/rundeck/pull/2906)
+* [2.10: Edit System ACL File: cannot save after submitting invalid file](https://github.com/rundeck/rundeck/issues/2904)
+* [fix typo. uploaded ot =\> uploaded to](https://github.com/rundeck/rundeck/pull/2897)
+* [IllegalStateException: output was closed and NullPointerException](https://github.com/rundeck/rundeck/issues/2887)
+* [RXSS vulnerability](https://github.com/rundeck/rundeck/issues/2883)
+* [Fix: model source plugin failure should log project name](https://github.com/rundeck/rundeck/pull/2869)
+* [API request for invalid path returns HTML response](https://github.com/rundeck/rundeck/issues/2867)
+* [Include aws resource model source plugin](https://github.com/rundeck/rundeck/pull/2857)
+* [Fix link in administration/managing-node-sources](https://github.com/rundeck/rundeck/pull/2856)
+* [single valued options with "selected=true" fetched from remote URL no longer works](https://github.com/rundeck/rundeck/issues/2854)
+* [Activity Log - Strange column widths](https://github.com/rundeck/rundeck/issues/2823)
+* [Cannot get AuthContext without subject (Invalid session?)](https://github.com/rundeck/rundeck/issues/2710)
+* [Download job definition yaml format shows inline](https://github.com/rundeck/rundeck/issues/824)
